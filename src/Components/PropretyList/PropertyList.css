@@ -1,0 +1,24 @@
+.plist {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.plistimg {
+  flex: 1;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.plist h1 {
+  font-weight: bold;
+  font-size: medium;
+}
+
+.plist h2 {
+  font-weight: 400;
+  font-size: small;
+}
