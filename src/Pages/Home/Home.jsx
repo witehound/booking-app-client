@@ -6,6 +6,7 @@ import {
   Featured,
   PropertyList,
   FeaturedProperties,
+  MailList,
 } from "../../Components";
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
         <PropertyList />
         <div className="hometitle">Homes guest Love</div>
         <FeaturedProperties />
+        <MailList />
       </div>
     </>
   );
