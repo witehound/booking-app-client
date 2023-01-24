@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+
+import { useNavigate } from "react-router-dom";
 import "./Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -15,6 +17,8 @@ import "react-date-range/dist/theme/default.css";
 import { formatDate } from "../../lib/date";
 
 const Header = ({ type }) => {
+  const navigate = useNavigate();
+
   const [openDate, setOpenDate] = useState(false);
   const [date, setDate] = useState([
     {
@@ -23,12 +27,15 @@ const Header = ({ type }) => {
       key: "Selection",
     },
   ]);
+
   const [openOptions, setOpenOptions] = useState(false);
   const [options, setOptions] = useState({
     adults: 1,
     children: 0,
     roomNumber: 1,
   });
+
+  const [destination, setDestination] = useState("");
   const handdleOption = (option, op) => {
     setOptions((prev) => {
       return {
@@ -40,6 +47,16 @@ const Header = ({ type }) => {
             ? options[option] - 1
             : 0,
       };
+    });
+  };
+
+  const handleSearch = () => {
+    navigate("/hotels", {
+      state: {
+        date,
+        destination,
+        options,
+      },
     });
   };
 
@@ -90,6 +107,7 @@ const Header = ({ type }) => {
                   type="text"
                   placeholder="where are you going?"
                   className="headersearchinput"
+                  onChange={(e) => setDestination(e.target.value)}
                 />
               </div>
               <div className="headersearchitem">
@@ -99,17 +117,18 @@ const Header = ({ type }) => {
                   onClick={() => {
                     setOpenDate(!openDate);
                   }}
-                >{`${formatDate(date[0].startDate)}  to  ${formatDate(
-                  date[0].endDate
-                )}`}</span>
+                >
+                  {`${formatDate(date[0].startDate)}  to  ${formatDate(
+                    date[0].endDate
+                  )}`}
+                </span>
                 {openDate ? (
                   <DateRange
                     editableDateInputs={true}
                     moveRangeOnFirstSelection={false}
-                    onChange={(item) => {
-                      setDate([item.selection]);
-                    }}
+                    onChange={(item) => setDate([item.Selection])}
                     ranges={date}
+                    minDate={new Date()}
                     className="headerdaterange"
                   />
                 ) : null}
@@ -192,7 +211,9 @@ const Header = ({ type }) => {
                 ) : null}
               </div>
               <div className="headersearchitem">
-                <button className="headerbutton">Search</button>
+                <button className="headerbutton" onClick={() => handleSearch()}>
+                  Search
+                </button>
               </div>
             </div>
           </>

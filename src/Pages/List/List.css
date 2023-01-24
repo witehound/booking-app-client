@@ -1,0 +1,42 @@
+.listcontainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.listwrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  gap: 20px;
+}
+
+.listresult {
+  flex: 3;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.lsoptions {
+  padding: 1rem;
+}
+
+.lsoptionitem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  color: #555;
+  font-size: small;
+}
+
+.lsoptionitem > input {
+  width: 70px;
+  height: 25px;
+}

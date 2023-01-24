@@ -5,6 +5,7 @@ import PropertyList from "./PropretyList/PropertyList";
 import FeaturedProperties from "./FeaturedProperties/FeaturedProperties";
 import MailList from "./MailList/MailList";
 import Footer from "./Footer/Footer";
+import ListSearch from "./ListSearch/ListSearch";
 
 export {
   Navbar,
@@ -14,4 +15,5 @@ export {
   FeaturedProperties,
   MailList,
   Footer,
+  ListSearch,
 };
