@@ -3,6 +3,7 @@
   color: whitesmoke;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .headercontainer {
@@ -20,10 +21,112 @@
   display: flex;
   gap: 10px;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .headerlistitem.active {
   border: 1px solid white;
   padding: 5px 10px;
   border-radius: 20px;
+}
+
+.headerTttle {
+  font-weight: 400;
+}
+
+.headerdesc {
+  margin: 24px 0;
+}
+
+.headerbutton {
+  background-color: #0071c2;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.headersearch {
+  padding: 0.5rem 0;
+  background-color: white;
+  border: 1.5px solid #febb02;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -1rem;
+  width: 1000%;
+  max-width: 1024px;
+}
+
+.heeadericon {
+  color: lightgray;
+}
+
+.headersearchitem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.headersearchinput {
+  border: none;
+  outline: none;
+}
+
+.headersearchtext {
+  color: lightgray;
+  cursor: pointer;
+}
+
+.headerdaterange {
+  position: absolute;
+  top: 2rem;
+}
+
+.options {
+  position: absolute;
+  top: 2rem;
+  background-color: white;
+  color: gray;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border: 1.5px solid #febb02;
+  gap: 1rem;
+}
+
+.optionitem {
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.optiontextspan {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.optionscontrol {
+  display: flex;
+  gap: 1rem;
+}
+
+.optioncounterbutton {
+  width: 40px;
+  height: 30px;
+  border: 1px solid #0071c2;
+  /* border: none; */
+  outline: none;
+  background-color: white;
+  cursor: pointer;
+  color: #0071c2;
 }
