@@ -11,10 +11,6 @@
   gap: 20px;
 }
 
-.listresult {
-  flex: 3;
-}
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;

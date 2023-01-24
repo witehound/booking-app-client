@@ -26,7 +26,7 @@ const ListSearch = ({ destination, date, options, openDate, setOpenDate }) => {
             onChange={(item) => setDate([item.Selection])}
             ranges={date}
             minDate={new Date()}
-            //   className="headerdaterange"
+            className="lsdaterange"
           />
         ) : null}
       </div>

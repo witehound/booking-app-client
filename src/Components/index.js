@@ -6,6 +6,7 @@ import FeaturedProperties from "./FeaturedProperties/FeaturedProperties";
 import MailList from "./MailList/MailList";
 import Footer from "./Footer/Footer";
 import ListSearch from "./ListSearch/ListSearch";
+import SearchItem from "./SearchItem/SearchItem";
 
 export {
   Navbar,
@@ -16,4 +17,5 @@ export {
   MailList,
   Footer,
   ListSearch,
+  SearchItem,
 };

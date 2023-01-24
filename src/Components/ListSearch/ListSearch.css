@@ -18,6 +18,14 @@
   flex-direction: column;
   gap: 5px;
   margin-bottom: 1rem;
+  position: relative;
+}
+
+.lsdaterange {
+  position: absolute;
+  z-index: 5;
+  top: 3rem;
+  left: 3rem;
 }
 
 .lsitem > label {

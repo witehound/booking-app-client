@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-import { Navbar, Header, Footer, ListSearch } from "../../Components";
+import {
+  Navbar,
+  Header,
+  Footer,
+  ListSearch,
+  SearchItem,
+} from "../../Components";
 import "./List.css";
 
 const List = () => {
@@ -22,7 +28,7 @@ const List = () => {
             openDate={openDate}
             setOpenDate={setOpenDate}
           />
-          <div className="listresult"></div>
+          <SearchItem />
         </div>
       </div>
       <Footer />
