@@ -7,6 +7,7 @@ import {
   PropertyList,
   FeaturedProperties,
   MailList,
+  Footer,
 } from "../../Components";
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
         <FeaturedProperties />
         <MailList />
       </div>
+      <Footer />
     </>
   );
 };
