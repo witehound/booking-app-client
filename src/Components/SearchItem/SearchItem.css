@@ -62,4 +62,58 @@
 
 .sidetails {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sirating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sirating > span {
+  font-weight: 400;
+  font-size: small;
+}
+
+.sirating > button {
+  background-color: #0071c2;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+.detailstext {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.siprice {
+  font-weight: medium;
+  font-weight: 400;
+}
+
+.sitaxop {
+  font-weight: 400;
+  color: gray;
+  font-size: smaller;
+}
+
+.siavalability {
+  border-radius: 5px;
+  background-color: #0071c2;
+  color: white;
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  margin-top: 2rem;
 }
