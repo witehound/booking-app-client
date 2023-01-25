@@ -1,0 +1,49 @@
+.hotelcontainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.hotelWrappeer {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hoteltitle {
+  font-size: large;
+  font-weight: 600;
+}
+
+.hoteladdress {
+  font-size: small;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hoteldistance {
+  color: #0071c2;
+  font-weight: 400;
+}
+
+.hotelpricehighlight {
+  font-weight: 400;
+  color: #008009;
+}
+
+.hotelimages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.hotelimagewrapper {
+  width: 400px;
+}
+
+.hotelimages > img {
+  width: 100%;
+  object-fit: cover;
+}
