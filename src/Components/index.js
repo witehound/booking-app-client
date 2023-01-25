@@ -8,6 +8,7 @@ import Footer from "./Footer/Footer";
 import ListSearch from "./ListSearch/ListSearch";
 import SearchItem from "./SearchItem/SearchItem";
 import ListResults from "./ListResults/ListResults";
+import Slider from "./Slider/Slider";
 
 export {
   Navbar,
@@ -20,4 +21,5 @@ export {
   ListSearch,
   SearchItem,
   ListResults,
+  Slider,
 };

@@ -1,15 +1,31 @@
-import React from "react";
-import { Navbar, Header, MailList, Footer } from "../../Components";
+import React, { useState } from "react";
+import { Navbar, Header, MailList, Footer, Slider } from "../../Components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { houseOne, houseTwo } from "../../assets";
 import "./Hotel.css";
 const Hotel = () => {
+  const [slide, setSlide] = useState(0);
+  const [slideOpen, setSlideOpen] = useState(false);
   const data = [houseOne, houseTwo, houseOne, houseTwo, houseOne, houseTwo];
+
+  const handleSlideOpen = (s) => {
+    setSlide(s);
+    setSlideOpen(true);
+  };
   return (
     <>
       <Navbar />
       <Header type={"list"} />
+      {slideOpen ? (
+        <Slider
+          data={data}
+          setSlideOpen={setSlideOpen}
+          setSlide={setSlide}
+          ln={data.length}
+          slide={slide}
+        />
+      ) : null}
       <div className="hotelcontainer">
         <div className="hotelWrappeer">
           <button className="booknow">Reserve or Book NoW!</button>
@@ -25,8 +41,15 @@ const Hotel = () => {
             Book a stay over $144 at this property and get a free airport taxi
           </span>
           <div className="hotelimages">
-            {data.map((hotel) => (
-              <img src={hotel} alt="hotelimage" />
+            {data.map((hotel, i) => (
+              <div className="hotelimageswrapper">
+                <img
+                  src={hotel}
+                  alt="hotelimage"
+                  className="htimage"
+                  onClick={() => handleSlideOpen(i)}
+                />
+              </div>
             ))}
           </div>
           <div className="hoteldetails">

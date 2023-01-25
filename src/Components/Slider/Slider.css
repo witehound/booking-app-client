@@ -1,0 +1,40 @@
+.slider {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.426);
+}
+
+.sliderwapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sliderimg {
+  width: 80%;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: lightgray;
+  cursor: pointer;
+}
+
+.arrow {
+  font-size: 2rem;
+  color: lightgray;
+  margin: 2rem;
+  cursor: pointer;
+}

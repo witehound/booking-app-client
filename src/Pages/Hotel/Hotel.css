@@ -1,3 +1,6 @@
+.ht {
+  position: relative;
+}
 .hotelcontainer {
   display: flex;
   justify-content: center;
@@ -49,12 +52,21 @@
 .hotelimages {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  margin: 1px;
+  gap: 4px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.hotelimages > img {
+.hotelimageswrapper {
+  width: 30%;
+}
+
+.htimage {
   width: 100%;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .hoteldetails {
