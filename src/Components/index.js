@@ -7,6 +7,7 @@ import MailList from "./MailList/MailList";
 import Footer from "./Footer/Footer";
 import ListSearch from "./ListSearch/ListSearch";
 import SearchItem from "./SearchItem/SearchItem";
+import ListResults from "./ListResults/ListResults";
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   Footer,
   ListSearch,
   SearchItem,
+  ListResults,
 };

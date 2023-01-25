@@ -5,7 +5,7 @@ import {
   Header,
   Footer,
   ListSearch,
-  SearchItem,
+  ListResults,
 } from "../../Components";
 import "./List.css";
 
@@ -28,7 +28,7 @@ const List = () => {
             openDate={openDate}
             setOpenDate={setOpenDate}
           />
-          <SearchItem />
+          <ListResults />
         </div>
       </div>
       <Footer />
