@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Header } from "../../Components";
+import { Navbar, Header, MailList, Footer } from "../../Components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { houseOne, houseTwo } from "../../assets";
@@ -12,6 +12,7 @@ const Hotel = () => {
       <Header type={"list"} />
       <div className="hotelcontainer">
         <div className="hotelWrappeer">
+          <button className="booknow">Reserve or Book NoW!</button>
           <h1 className="hoteltitle">Grand Hotel</h1>
           <div className="hoteladdress">
             <FontAwesomeIcon icon={faLocationDot} />
@@ -52,6 +53,8 @@ const Hotel = () => {
           </div>
         </div>
       </div>
+      <MailList />
+      <Footer />
     </>
   );
 };
