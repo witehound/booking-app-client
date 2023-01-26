@@ -9,7 +9,7 @@ const Featured = () => {
   const { data, loading, error } = useFetch(
     `${API_BASE_URL}/hotel/countByCity?cities=berlin,london,madrid`
   );
-  console.log(data);
+
   return (
     <div className="featured">
       {loading ? (
